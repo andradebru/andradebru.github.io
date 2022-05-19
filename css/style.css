@@ -1,16 +1,52 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "roboto", sans-serif;
   font-weight: 300;
 }
 
 body {
   background-color: antiquewhite;
-  margin: 5%;
 }
 
 header {
-  border-bottom: 0.2px solid black;
+  border-bottom: 0.2px solid #201f1f;
   padding-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link-menu {
+  padding: 0px 10px 0px 0px;
+  text-decoration: none;
+  color: #201f1f;
+}
+
+main {
+  margin: 5%;
+  height: 500px;
+}
+
+.dark-div-border {
+  height: 400px;
+  background-color: #201f1f;
+  border-radius: 5px;
+  color: antiquewhite;
+  padding: 2%;
+  margin: 3%;
+}
+
+.dark-div {
+  height: 400px;
+  background-color: #201f1f;
+  color: antiquewhite;
+  padding: 5%;
+}
+
+.light-div {
+  background-color: antiquewhite;
+  height: 400px;
+  border-radius: 5px;
+  color: #201f1f;
+  padding: 5%;
 }
 
 h1 {
@@ -19,9 +55,28 @@ h1 {
   font-size: 4rem;
 }
 
-h2 {
-  font-weight: 400;
-  font-size: 1.5rem;
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* span styles */
+.destaque-vermelho {
+  color: #d8071d;
+}
+
+.destaque-verde {
+  color: #36ffb1;
+}
+
+.destaque-bloco-pto {
+  background-color: #201f1f;
+}
+
+.destaque-bloco-bco {
+  background-color: antiquewhite;
 }
 
 .serif-bold {
