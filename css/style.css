@@ -1,0 +1,30 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: antiquewhite;
+  margin: 5%;
+}
+
+header {
+  border-bottom: 0.2px solid black;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-family: "playfair", serif;
+  font-style: italic;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.serif-bold {
+  font-family: "playfair";
+  font-weight: 700;
+}
