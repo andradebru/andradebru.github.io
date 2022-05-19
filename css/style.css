@@ -49,10 +49,34 @@ main {
   padding: 5%;
 }
 
-h1 {
+.hello {
+  font-family: "playfair", serif;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "playfair", serif;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+h3 {
   font-family: "playfair", serif;
   font-style: italic;
   font-size: 4rem;
+}
+
+.nome {
+  font-size: 8rem;
+  font-family: "playfair", serif;
+  font-style: italic;
+}
+
+.contato {
+}
+
+.footer {
 }
 
 .subtitle {
@@ -82,4 +106,8 @@ h1 {
 .serif-bold {
   font-family: "playfair";
   font-weight: 700;
+}
+
+.creditos {
+  font-size: 1rem;
 }
