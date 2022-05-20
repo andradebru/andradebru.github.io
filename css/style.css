@@ -25,6 +25,15 @@ main {
   height: 500px;
 }
 
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto-hero {
+  height: 350px;
+}
+
 .dark-div-border {
   height: 400px;
   background-color: #201f1f;
@@ -71,6 +80,8 @@ h3 {
   font-size: 8rem;
   font-family: "playfair", serif;
   font-style: italic;
+  line-height: 5.5rem;
+  margin: 135px 0 0 0;
 }
 
 .contato {
