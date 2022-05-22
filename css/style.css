@@ -3,7 +3,8 @@
   font-weight: 300;
 }
 
-body {
+html, body {
+  height: 100%;
   background-color: antiquewhite;
 }
 
@@ -12,6 +13,14 @@ header {
   padding-bottom: 5px;
   display: flex;
   justify-content: flex-start;
+  margin: 5% 5% 0 5% ;
+}
+
+.apresentacao {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .link-menu {
@@ -21,8 +30,11 @@ header {
 }
 
 main {
-  margin: 5%;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% ;
+  height: auto;
+  align-items: center;
 }
 
 .hero {
@@ -30,12 +42,41 @@ main {
   justify-content: space-between;
 }
 
+.imagem {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .foto-hero {
-  height: 350px;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #36ffb1;
+  mix-blend-mode: multiply;
+}
+
+.down-btn {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #201f1f;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.fa-chevron-down {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dark-div-border {
-  height: 400px;
+  height: auto;
   background-color: #201f1f;
   border-radius: 5px;
   color: antiquewhite;
@@ -44,7 +85,7 @@ main {
 }
 
 .dark-div {
-  height: 400px;
+  height: auto;
   background-color: #201f1f;
   color: antiquewhite;
   padding: 5%;
@@ -59,30 +100,63 @@ main {
 }
 
 .hello {
-  font-family: "playfair", serif;
+  color: #201f1f;
+  font-family: 'DM Serif Display', serif;
   font-style: italic;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: "playfair", serif;
+  font-family: 'DM Serif Display', serif;
   font-style: italic;
   font-size: 3rem;
 }
 
 h3 {
-  font-family: "playfair", serif;
+  font-family: 'DM Serif Display', serif;
   font-style: italic;
   font-size: 4rem;
 }
 
 .nome {
+  color: #201f1f;
+  text-transform: uppercase;
   font-size: 8rem;
-  font-family: "playfair", serif;
+  font-kerning: -2;
+  font-family: 'DM Serif Display', serif;
   font-style: italic;
   line-height: 5.5rem;
-  margin: 135px 0 0 0;
 }
+
+.nome-de {
+  color: #201f1f;
+  text-transform: lowercase;
+  font-size: 4rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.firula {
+  font: "Roboto Condensed";
+  font-size: 1.4rem;
+  color: #201f1f;
+  margin-top: 20px;
+}
+
+.itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.item-portfolio {
+  height: 300px;
+  width: 300px;
+  background-color: antiquewhite;
+  object-fit: cover; 
+  object-position: 100% 1;}
 
 .contato {
 }
@@ -115,8 +189,23 @@ h3 {
 }
 
 .serif-bold {
-  font-family: "playfair";
+  font-family: 'DM Serif Display', serif;
   font-weight: 700;
+}
+
+/* cor da seleção */
+::-moz-selection { /* Code for Firefox */
+  color: #201f1f;
+  background: #36ffb1;
+  mix-blend-mode: multiply;
+}
+
+::selection {
+  color: #201f1f;
+  background: #36ffb1;
+  mix-blend-mode: multiply;
+
+
 }
 
 .creditos {
