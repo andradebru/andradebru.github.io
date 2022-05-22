@@ -75,6 +75,60 @@ main {
   align-items: center;
 }
 
+/* .perfil {
+  width: 25%;
+}
+
+.cont-perfil {
+  height: 100px;
+  width: 100px;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+*/
+
+.coluna-perfil {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.txt-corrido {
+  font-size: 18px;
+  color: #201f1f;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
 .dark-div-border {
   height: auto;
   background-color: #201f1f;
@@ -93,7 +147,7 @@ main {
 
 .light-div {
   background-color: antiquewhite;
-  height: 400px;
+  height: auto;
   border-radius: 5px;
   color: #201f1f;
   padding: 5%;
@@ -187,11 +241,15 @@ h3 {
 }
 
 .destaque-bloco-pto {
+  display: inline;
   background-color: #201f1f;
+  color: antiquewhite;
 }
 
 .destaque-bloco-bco {
+  display: inline;
   background-color: antiquewhite;
+  color: #201f1f;
 }
 
 .serif-bold {
