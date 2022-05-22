@@ -112,6 +112,10 @@ h2 {
   font-size: 3rem;
 }
 
+.txt-centro {
+  text-align: center;
+}
+
 h3 {
   font-family: 'DM Serif Display', serif;
   font-style: italic;
@@ -152,12 +156,14 @@ h3 {
 }
 
 .item-portfolio {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  max-width: 350px;
   background-color: antiquewhite;
   object-fit: cover; 
-  object-position: 100% 1;}
-
+  object-position: 100% 1;
+  flex: 1 1 0;
+}
+  
 .contato {
 }
 
