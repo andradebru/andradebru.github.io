@@ -3,17 +3,21 @@
   font-weight: 300;
 }
 
-html, body {
-  height: 100%;
+html,
+body {
   background-color: antiquewhite;
 }
 
 header {
+  background-color: antiquewhite;
+  position: sticky;
+  top: 0;
   border-bottom: 0.2px solid #201f1f;
-  padding-bottom: 5px;
+  padding: 15px;
+  z-index: 1;
   display: flex;
   justify-content: flex-start;
-  margin: 5% 5% 0 5% ;
+  margin: 50px 5% 5% 5%;
 }
 
 .apresentacao {
@@ -32,7 +36,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 5% ;
+  margin: 0 5%;
   height: auto;
   align-items: center;
 }
@@ -155,13 +159,13 @@ main {
 
 .hello {
   color: #201f1f;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-style: italic;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-style: italic;
   font-size: 3rem;
 }
@@ -171,7 +175,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-style: italic;
   font-size: 4rem;
 }
@@ -181,7 +185,7 @@ h3 {
   text-transform: uppercase;
   font-size: 8rem;
   font-kerning: -2;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-style: italic;
   line-height: 5.5rem;
 }
@@ -190,7 +194,7 @@ h3 {
   color: #201f1f;
   text-transform: lowercase;
   font-size: 4rem;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .firula {
@@ -213,11 +217,11 @@ h3 {
   height: 250px;
   max-width: 350px;
   background-color: antiquewhite;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: 100% 1;
   flex: 1 1 0;
 }
-  
+
 .contato {
 }
 
@@ -253,12 +257,13 @@ h3 {
 }
 
 .serif-bold {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-weight: 700;
 }
 
 /* cor da seleção */
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: #201f1f;
   background: #36ffb1;
   mix-blend-mode: multiply;
@@ -268,8 +273,6 @@ h3 {
   color: #201f1f;
   background: #36ffb1;
   mix-blend-mode: multiply;
-
-
 }
 
 .creditos {
