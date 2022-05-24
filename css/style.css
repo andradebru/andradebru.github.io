@@ -92,11 +92,28 @@ main {
 */
 
 .coluna-perfil {
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  gap: 10px;
   flex-wrap: nowrap;
+  box-sizing: border-box;
+  gap: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  margin: 20px 0 20px 0;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.coluna-txt {
+  flex-direction: column;
+  width: 100%;
 }
 
 .row {
@@ -104,20 +121,19 @@ main {
 }
 
 .txt-corrido {
-  font-size: 18px;
+  font-size: 20px;
   color: #201f1f;
+  line-height: 1.5;
+}
+
+.txt-bco {
+  color: antiquewhite;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
   padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
 }
 
 /* Clear floats after rows */
@@ -128,18 +144,37 @@ main {
 }
 
 /* Content */
-.content {
-  background-color: white;
+.polaroid {
+  background-color: #faf5ef;
   padding: 10px;
+  width: 25%;
+  rotate: 5%;
+  box-shadow: 0 0 -2em black;
+  transform: rotate(-3deg);
+  margin: 0 2%;
+  object-fit: cover;
+  object-position: 100% 1;
+}
+
+.polaroid-direita {
+  background-color: #faf5ef;
+  padding: 10px;
+  width: 25%;
+  rotate: 5%;
+  box-shadow: 0 0 -2em black;
+  transform: rotate(3deg);
+  margin: 0 2%;
+  object-fit: cover;
+  object-position: 100% 1;
 }
 
 .dark-div-border {
   height: auto;
   background-color: #201f1f;
-  border-radius: 5px;
+  border-radius: 10px;
   color: antiquewhite;
-  padding: 2%;
-  margin: 3%;
+  padding: 25px;
+  margin: 5% 5% 0 5%;
 }
 
 .dark-div {
@@ -203,19 +238,24 @@ h3 {
   color: #201f1f;
   margin-top: 20px;
 }
+.portfolio {
+  justify-content: center;
+}
 
 .itens {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   flex-grow: 1;
+  width: 100%;
 }
 
 .item-portfolio {
-  height: 250px;
-  max-width: 350px;
+  height: 300px;
   background-color: antiquewhite;
   object-fit: cover;
   object-position: 100% 1;
