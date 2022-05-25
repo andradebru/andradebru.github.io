@@ -73,11 +73,36 @@ main {
   text-decoration: none;
 }
 
+.down-btn:hover {
+  background-color: #36ffb1;
+}
+
 .fa-chevron-down {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.down-btn:hover > .fa-chevron-down {
+  color: #201f1f;
+}
+
+.contacts-container {
+  margin: 5% 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-icn {
+  font-size: 4rem;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.contact-icn:hover {
+  color: #36ffb1;
 }
 
 /* .perfil {
@@ -157,6 +182,25 @@ main {
   box-sizing: border-box;
 }
 
+.txt-polaroid {
+  padding: 0;
+  color: #201f1f;
+  text-align: center;
+  font-weight: 700;
+}
+
+.polaroid-icn {
+    font-size: 1rem;
+    color: #201f1f;
+    text-decoration: none;
+    text-align: center;
+}
+
+.polaroid-icn:hover {
+  color: #36ffb1;
+}
+
+/* 
 .polaroid-direita {
   background-color: #faf5ef;
   padding: 10px;
@@ -167,7 +211,7 @@ main {
   margin: 0 2%;
   object-fit: cover;
   object-position: 100% 1;
-}
+} */
 
 .dark-div-border {
   height: auto;
@@ -182,7 +226,7 @@ main {
   height: auto;
   background-color: #201f1f;
   color: antiquewhite;
-  padding: 5%;
+  padding: 5% 5% 20px 5%;
 }
 
 .light-div {
@@ -314,5 +358,7 @@ h3 {
 }
 
 .creditos {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  bottom: 0;
+  text-align: center;
 }
