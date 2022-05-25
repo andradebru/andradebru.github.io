@@ -362,3 +362,37 @@ h3 {
   bottom: 0;
   text-align: center;
 }
+
+
+@media (max-width: 475px) {
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-hero {
+  width: 80%;
+  border-radius: 50%;
+  margin: 5%;
+}
+
+.column {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+}
+
+.nome {
+  font-size: 4rem;
+  font-kerning: -2;
+  line-height: 4rem;
+}
+
+.item-portfolio {
+  height: auto;
+  width: 90%;
+}
+
+}
