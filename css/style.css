@@ -302,6 +302,11 @@ h3 {
   object-fit: cover;
   object-position: 100% 1;
   border: 1px #201f1f solid;
+  mix-blend-mode: multiply;
+}
+
+.item-portfolio:hover {
+  mix-blend-mode: normal;
 }
 
 .contato {
@@ -364,7 +369,7 @@ h3 {
 }
 
 
-@media (max-width: 475px) {
+@media (max-width: 786px) {
 .hero {
   display: flex;
   flex-direction: column;
@@ -390,9 +395,64 @@ h3 {
   line-height: 4rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+.polaroid {
+  width: 80%;
+}
+
 .item-portfolio {
   height: auto;
-  width: 90%;
+  width: 100%;
+  align-items: center;
+  mix-blend-mode: normal;
+}
+
+.contact-icn {
+  font-size: 3rem;
 }
 
 }
+
+@media (min-width:786px) and (max-width:1264px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .foto-hero {
+    width: 100%;
+    border-radius: 50%;
+    margin: 5%;
+  }
+  
+  /* .column {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  } */
+  
+  .nome {
+    font-size: 6rem;
+    font-kerning: -2;
+    line-height: 5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .polaroid {
+    width: 65%;
+  }
+
+  .contact-icn {
+    font-size: 3rem;
+  }
+  
+  }
+  
