@@ -125,6 +125,7 @@ main {
   font-size: 20px;
   color: #201f1f;
   line-height: 1.5;
+  padding: 10px 0;
 }
 
 .txt-bco {
@@ -149,12 +150,11 @@ main {
   background-color: #faf5ef;
   padding: 10px;
   width: 25%;
-  rotate: 5%;
-  box-shadow: 0 0 -2em black;
+  height: auto;
   transform: rotate(-3deg);
   margin: 0 2%;
   object-fit: cover;
-  object-position: 100% 1;
+  box-sizing: border-box;
 }
 
 .polaroid-direita {
@@ -187,8 +187,6 @@ main {
 
 .light-div {
   background-color: antiquewhite;
-  height: auto;
-  border-radius: 5px;
   color: #201f1f;
   padding: 5%;
 }
@@ -244,23 +242,22 @@ h3 {
 }
 
 .itens {
-  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
   gap: 10px;
-  flex-grow: 1;
-  width: 100%;
 }
 
 .item-portfolio {
   height: 300px;
+  width: 450px;
   background-color: antiquewhite;
   object-fit: cover;
   object-position: 100% 1;
-  flex: 1 1 0;
+  border: 1px #201f1f solid;
 }
 
 .contato {
