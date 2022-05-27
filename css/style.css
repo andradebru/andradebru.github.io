@@ -10,14 +10,15 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
   background-color: antiquewhite;
   position: sticky;
   top: 0;
   border-bottom: 0.2px solid #201f1f;
-  padding: 15px;
+  padding: 15px 0;
   z-index: 1;
-  display: flex;
-  justify-content: flex-start;
   margin: 30px 5% 5% 5%;
 }
 
@@ -29,9 +30,15 @@ header {
 }
 
 .link-menu {
-  padding: 0px 10px 0px 0px;
   text-decoration: none;
   color: #201f1f;
+  line-height: 22px;
+  font-size: 20px;
+}
+
+.link-menu:hover {
+  background-color: #36ffb1;
+  line-height: 22px;
 }
 
 main {
@@ -45,6 +52,7 @@ main {
 .hero {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .imagem {
@@ -106,18 +114,6 @@ main {
 .contact-icn:hover {
   color: #36ffb1;
 }
-
-/* .perfil {
-  width: 25%;
-}
-
-.cont-perfil {
-  height: 100px;
-  width: 100px;
-  background-color: antiquewhite;
-  padding: 10px;
-}
-*/
 
 .coluna-perfil {
   display: flex;
@@ -255,6 +251,8 @@ h3 {
   font-family: "DM Serif Display", serif;
   font-style: italic;
   font-size: 4rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nome {
@@ -279,11 +277,12 @@ h3 {
   font-style: normal;
   font-size: 1.4rem;
   color: #201f1f;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
-.firula-portfolio {
-  font-size: 1.2rem;
+.firula-opcional {
+  font-style: normal;
+  font-size: 1.4rem;
 }
 
 .portfolio {
@@ -326,6 +325,7 @@ h3 {
   font-weight: 700;
   font-size: 1.6rem;
   font-family: "Roboto Condensed", sans-serif;
+  margin-top: 0.2rem;
 }
 
 .link-creditos {
@@ -337,7 +337,7 @@ h3 {
 /* span styles */
 .destaque-verde {
   background-color: #36ffb1;
-  display: inline-block;
+  display: inline;
 }
 
 .destaque-bloco-pto {
@@ -378,7 +378,22 @@ h3 {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .link-menu {
+    line-height: 16px;
+    font-size: 16px;
+  }
+
+  .txt-corrido {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 786px) {
+  .header {
+    gap: 10px;
+  }
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -412,7 +427,7 @@ h3 {
     font-size: 1.2rem;
   }
 
-  .firula-portfolio {
+  .firula-opcional {
     font-size: 1.2rem;
     display: none;
   }
@@ -430,6 +445,18 @@ h3 {
     width: 100%;
     align-items: center;
     mix-blend-mode: normal;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contacts-container {
+    width: 70%;
   }
 
   .contact-icn {
@@ -480,5 +507,4 @@ h3 {
   .dark-div-border {
     padding: 90px;
   }
-
 }
