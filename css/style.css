@@ -200,19 +200,6 @@ main {
   color: #36ffb1;
 }
 
-/* 
-.polaroid-direita {
-  background-color: #faf5ef;
-  padding: 10px;
-  width: 25%;
-  rotate: 5%;
-  box-shadow: 0 0 -2em black;
-  transform: rotate(3deg);
-  margin: 0 2%;
-  object-fit: cover;
-  object-position: 100% 1;
-} */
-
 .dark-div-border {
   height: auto;
   background-color: #201f1f;
