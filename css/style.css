@@ -18,7 +18,7 @@ header {
   z-index: 1;
   display: flex;
   justify-content: flex-start;
-  margin: 50px 5% 5% 5%;
+  margin: 30px 5% 5% 5%;
 }
 
 .apresentacao {
@@ -89,10 +89,12 @@ main {
 }
 
 .contacts-container {
+  width: 50%;
   margin: 5% 0;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .contact-icn {
@@ -135,6 +137,7 @@ main {
   flex-direction: row;
   gap: 20px;
   width: 100%;
+  align-items: center;
 }
 
 .coluna-txt {
@@ -175,7 +178,7 @@ main {
   background-color: #faf5ef;
   padding: 10px;
   width: 25%;
-  height: auto;
+  height: 50%;
   transform: rotate(-3deg);
   margin: 0 2%;
   object-fit: cover;
@@ -187,13 +190,14 @@ main {
   color: #201f1f;
   text-align: center;
   font-weight: 700;
+  font-style: italic;
 }
 
 .polaroid-icn {
-    font-size: 1rem;
-    color: #201f1f;
-    text-decoration: none;
-    text-align: center;
+  font-size: 1rem;
+  color: #201f1f;
+  text-decoration: none;
+  text-align: center;
 }
 
 .polaroid-icn:hover {
@@ -205,8 +209,9 @@ main {
   background-color: #201f1f;
   border-radius: 10px;
   color: antiquewhite;
-  padding: 25px;
+  padding: 3rem;
   margin: 5% 5% 0 5%;
+  align-items: center;
 }
 
 .dark-div {
@@ -214,6 +219,13 @@ main {
   background-color: #201f1f;
   color: antiquewhite;
   padding: 5% 5% 20px 5%;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .light-div {
@@ -264,12 +276,24 @@ h3 {
 
 .firula {
   font: "Roboto Condensed";
+  font-style: normal;
   font-size: 1.4rem;
   color: #201f1f;
   margin-top: 20px;
 }
+
+.firula-portfolio {
+  font-size: 1.2rem;
+}
+
 .portfolio {
   justify-content: center;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .itens {
@@ -304,13 +328,16 @@ h3 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/* span styles */
-.destaque-vermelho {
-  color: #d8071d;
+.link-creditos {
+  color: antiquewhite;
+  font-weight: 400;
+  text-decoration: none;
 }
 
+/* span styles */
 .destaque-verde {
-  color: #36ffb1;
+  background-color: #36ffb1;
+  display: inline-block;
 }
 
 .destaque-bloco-pto {
@@ -323,6 +350,7 @@ h3 {
   display: inline;
   background-color: antiquewhite;
   color: #201f1f;
+  font-weight: 400;
 }
 
 .serif-bold {
@@ -350,84 +378,92 @@ h3 {
   text-align: center;
 }
 
-
 @media (max-width: 786px) {
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-hero {
+    width: 80%;
+    border-radius: 50%;
+    margin: 5%;
+  }
+
+  .column {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .nome {
+    font-size: 4rem;
+    font-kerning: -2;
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .firula {
+    font-size: 1.2rem;
+  }
+
+  .firula-portfolio {
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  .portfolio-title {
+    flex-direction: column;
+  }
+
+  .polaroid {
+    width: 80%;
+  }
+
+  .item-portfolio {
+    height: auto;
+    width: 100%;
+    align-items: center;
+    mix-blend-mode: normal;
+  }
+
+  .contact-icn {
+    font-size: 3rem;
+  }
+
+  .creditos {
+    margin-top: 5px;
+  }
 }
 
-.foto-hero {
-  width: 80%;
-  border-radius: 50%;
-  margin: 5%;
-}
-
-.column {
-  align-items: center;
-  display: flex;
-  flex-direction: column-reverse;
-  width: 90%;
-}
-
-.nome {
-  font-size: 4rem;
-  font-kerning: -2;
-  line-height: 4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-.polaroid {
-  width: 80%;
-}
-
-.item-portfolio {
-  height: auto;
-  width: 100%;
-  align-items: center;
-  mix-blend-mode: normal;
-}
-
-.contact-icn {
-  font-size: 3rem;
-}
-
-}
-
-@media (min-width:786px) and (max-width:1264px) {
+@media (min-width: 786px) and (max-width: 1264px) {
   .hero {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  
+
   .foto-hero {
     width: 100%;
     border-radius: 50%;
     margin: 5%;
   }
-  
-  /* .column {
-    align-items: center;
-    display: flex;
-    flex-direction: column-reverse;
-    width: 90%;
-  } */
-  
+
   .nome {
     font-size: 6rem;
     font-kerning: -2;
     line-height: 5rem;
   }
-  
+
   h2 {
     font-size: 2rem;
   }
-  
+
   .polaroid {
     width: 65%;
   }
@@ -435,6 +471,14 @@ h2 {
   .contact-icn {
     font-size: 3rem;
   }
-  
+}
+
+@media (min-width: 900px) {
+  .contact-icn {
+    font-size: 6rem;
   }
-  
+  .dark-div-border {
+    padding: 90px;
+  }
+
+}
