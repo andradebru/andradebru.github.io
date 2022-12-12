@@ -9,6 +9,13 @@ body {
   background-color: antiquewhite;
 }
 
+figcaption {
+  margin-top: 2px;
+  padding: 5px;
+  border-top: 1px #201f1f9d solid;
+  font-size: small;
+}
+
 header {
   display: flex;
   justify-content: flex-start;
@@ -20,6 +27,10 @@ header {
   padding: 15px 0;
   z-index: 1;
   margin: 30px 5% 5% 5%;
+}
+
+div.apresentacao > h3 {
+  margin-top: 10px;
 }
 
 .apresentacao {
@@ -53,6 +64,10 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+.hero > .firula {
+  margin: 10px 0;
 }
 
 .imagem {
@@ -235,6 +250,7 @@ main {
   font-family: "DM Serif Display", serif;
   font-style: italic;
   font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -277,7 +293,8 @@ h3 {
   font-style: normal;
   font-size: 1.4rem;
   color: #201f1f;
-  margin-top: 5px;
+  margin-top: 10px;
+  -webkit-margin-bottom-collapse: 5px;
 }
 
 .firula-opcional {
@@ -381,15 +398,19 @@ h3 {
 @media (max-width: 500px) {
   .link-menu {
     line-height: 16px;
-    font-size: 16px;
+    font-size: medium;
   }
 
   .txt-corrido {
-    font-size: 16px;
+    font-size: small;
   }
 }
 
 @media (max-width: 786px) {
+  .link-menu {
+    font-size: small;
+  }
+
   .header {
     gap: 10px;
   }
@@ -432,6 +453,10 @@ h3 {
     display: none;
   }
 
+  .txt-corrido {
+    font-size: small;
+  }
+
   .portfolio-title {
     flex-direction: column;
   }
@@ -469,6 +494,10 @@ h3 {
 }
 
 @media (min-width: 786px) and (max-width: 1264px) {
+  body {
+    max-width: 1200px;
+  }
+
   .hero {
     display: flex;
     align-items: center;
@@ -476,7 +505,7 @@ h3 {
   }
 
   .foto-hero {
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     margin: 5%;
   }
