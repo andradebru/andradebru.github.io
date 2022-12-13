@@ -1,4 +1,4 @@
-# dfinal-minha-pagina
+# Personal Page :)
 My personal page made as the final challenge of the first part of Buser Tech front-end course. </br>
 I didn't want it to look like a generic developer page and took inspirations at some personal passions: books and typography (the antiquewhite background and serif fonts) and a little bit of the anime Evangelion (the green color and diagonals, also the bold big serif font, like the title cards :hand_over_mouth:).
 </br>
