@@ -27,176 +27,181 @@
       src="https://kit.fontawesome.com/9bcdacf017.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/script.js"></script>
   </head>
   <body>
-    <navbar class="no-footer">
-      <a href="#" class="link-menu">início //</a>
-      <a href="#sobre" class="link-menu"> quem é //</a>
-      <a href="#portfolio" class="link-menu"> portfolio //</a>
-      <a href="#contato" class="link-menu"> contato //</a>
-    </navbar>
-    <div class="no-footer">
-      <main>
-        <div class="hero">
-          <div class="apresentacao">
-            <p class="hello margin-bottom">
-              hello, world! I'm <span class="firula-opcional">/////////////////////</span>
-            </p>
-            <h1 class="nome margin-bottom">
-              Bruna <span class="nome-de">de</span><br>
-              <span class="serif-bold">Andrade</span>
-            </h1>
-            <p class="firula">//////////////////////////////////////////////////////</p>
-            <h3 class="subtitle"><span class="destaque-verde subtitle">Web developer & designer</span></h3>
+    <div id="content">
+      <h1 id="title"></h1>
+      <p id="description"></p>
+      <navbar class="no-footer">
+        <button id="langSwitch">Switch Language</button>
+        <a href="#" class="link-menu">início //</a>
+        <a href="#sobre" class="link-menu"> quem é //</a>
+        <a href="#portfolio" class="link-menu"> portfolio //</a>
+        <a href="#contato" class="link-menu"> contato //</a>
+      </navbar>
+      <div class="no-footer">
+        <main>
+          <div class="hero">
+            <div class="apresentacao">
+              <p class="hello margin-bottom">
+                hello, world! I'm <span class="firula-opcional">/////////////////////</span>
+              </p>
+              <h1 class="nome margin-bottom">
+                Bruna <span class="nome-de">de</span><br>
+                <span class="serif-bold">Andrade</span>
+              </h1>
+              <p class="firula">//////////////////////////////////////////////////////</p>
+              <h3 class="subtitle"><span class="destaque-verde subtitle">Web developer & designer</span></h3>
+            </div>
+            <div class="imagem">
+              <img src="./img/bruna_profile.png" alt="" class="foto-hero" />
+            </div>
           </div>
-          <div class="imagem">
-            <img src="./img/bruna_profile.png" alt="" class="foto-hero" />
-          </div>
-        </div>
-        <a href="#sobre" class="down-btn"
-          ><i class="fa-solid fa-chevron-down"></i>
-        </a>
-      </main>
-      <div id="sobre"></div>
-      <div class="dark-div-border apresentacao" >
-          <div class="column">
-            <div class="polaroid">
-              <img src="./img/perfil.jpg" alt="" style="width: 100%" />
-              <p class="txt-polaroid">Nas horas vagas:</p>
-              <div class="polaroid-icn">
-                <a href="https://letterboxd.com/brunandrade/" i class="fa-solid fa-clapperboard polaroid-icn"></a i>
-                <a href="https://www.skoob.com.br/usuario/185970" i class="fa-solid fa-book-open polaroid-icn"></a i>
-                <a href="https://www.instagram.com/__andradebru__/" i class="fa-brands fa-instagram-square polaroid-icn"></a i>
+          <a href="#sobre" class="down-btn"
+            ><i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </main>
+        <div id="sobre"></div>
+        <div class="dark-div-border apresentacao" >
+            <div class="column">
+              <div class="polaroid">
+                <img src="./img/perfil.jpg" alt="" style="width: 100%" />
+                <p class="txt-polaroid">Nas horas vagas:</p>
+                <div class="polaroid-icn">
+                  <a href="https://letterboxd.com/brunandrade/" i class="fa-solid fa-clapperboard polaroid-icn"></a i>
+                  <a href="https://www.skoob.com.br/usuario/185970" i class="fa-solid fa-book-open polaroid-icn"></a i>
+                </div>
+              </div>
+              <div class="coluna-txt">
+                <h2>Quem é essa Bruna?</h2>
+                <ul class="txt-corrido txt-bco">
+                  <li> Estudante de <span class="destaque-bloco-bco">Análise e Desenvolvimento de Sistemas</span>.</li> 
+                  <li> Foi estagiária de desenvolvimento web na Buser, pelo programa <span class="destaque-bloco-bco">Buser Tech</span>.</li> 
+                  <li>
+                    Tem experiência com front-end com <span class="destaque-bloco-bco">Vue, Vuetify, HTML, 
+                    CSS e JavaScript</span>, back-end com <span class="destaque-bloco-bco">Python e Django</span> 
+                    e banco de dados <span class="destaque-bloco-bco">Postgres, SQL</span>. 
+                    Atualmente estudando Java.
+                  </li> 
+                  <li>
+                    Graduada em <span class="destaque-bloco-bco">Design Gráfico</span>. 
+                    Na área, trabalhei em várias agências com foco em criação de interfaces para sites e apps.
+                  </li>
+                  <li>
+                    Apaixonada por literatura, cinema, filme de terror (principalmente os com efeitos práticos), 
+                    viagens, arte e tecnologia.
+                    Dá pra conferir o que curto nas redes que deixei aqui do lado :) 
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="coluna-txt">
-              <h2>Quem é essa Bruna?</h2>
-              <ul class="txt-corrido txt-bco">
-                <li> Estudante de <span class="destaque-bloco-bco">Análise e Desenvolvimento de Sistemas</span>.</li> 
-                <li> Foi estagiária de desenvolvimento web na Buser, pelo programa <span class="destaque-bloco-bco">Buser Tech</span>.</li> 
-                <li>
-                  Tem experiência com front-end com <span class="destaque-bloco-bco">Vue, Vuetify, HTML, 
-                  CSS e JavaScript</span>, back-end com <span class="destaque-bloco-bco">Python e Django</span> 
-                  e banco de dados <span class="destaque-bloco-bco">Postgres, SQL</span>. 
-                  Atualmente estudando Java.
-                </li> 
-                <li>
-                  Graduada em <span class="destaque-bloco-bco">Design Gráfico</span>. 
-                  Na área, trabalhei em várias agências com foco em criação de interfaces para sites e apps.
-                </li>
-                <li>
-                  Apaixonada por literatura, cinema, filme de terror (principalmente os com efeitos práticos), 
-                  viagens, arte e tecnologia.
-                  Dá pra conferir o que curto nas redes que deixei aqui do lado :) 
-                </li>
-              </ul>
+          </div>
             </div>
           </div>
         </div>
-          </div>
-        </div>
-      </div>
-      <div class="light-div portfolio" id="portfolio">
-        <div class="portfolio-title">
-        <p class="firula-opcional">////////////////////////////////////////// &nbsp</p>
-          <h2 class="txt-centro">  O que tenho feito </h2>
-          <p class="firula-opcional">&nbsp //////////////////////////////////////////</p>
-          </div>
-          <p class="txt-corrido txt-centro">Projetos além desta página :p</p> 
-        
-          <div class="itens">
-          <div>
-          <a href="https://github.com/andradebru/EncurtadorURLsDjango" target="_blank">
-            <figure>
-              <img src="./img/encurteco.png" class="item-portfolio" alt="Tela inicial do encurtador de URLs.">
-            </a>
-            <figcaption>
-              Encurtador de URLs feito em equipe, com Django e PostgreSQL.
-            </figcaption>
-            </figure>
-          </div>
-
-          <div>
-            <a href="https://andradebru.github.io/d4-wordle/" target="_blank">
-            <figure>
-              <img src="./img/wordle.jpg" class="item-portfolio" alt="">
-            </a>
-              <figcaption>
-                Clone do jogo Wordle feito com JavaScript, jogável e funcional.
-              </figcaption>
-            </figure>
-          </div>
-
-          <div>
-            <a href="https://andradebru.github.io/d7-buscador-de-passagens/" target="_blank">
-            <figure>
-              <img src="./img/buscador.jpg" class="item-portfolio" 
-              alt="Tela inicial no formato mobile de um app de viagens de ônibus.">
-            </a>
-              <figcaption>
-                Reprodução da tela inicial do app mobile da Buser.
-              </figcaption>
-            </figure>
-          </div>
-
-          <div>
-            <a href="https://andradebru.github.io/d6-order-summary/" target="_blank">
-              <figure>
-                <img src="./img/portifloio-01.jpg" class="item-portfolio" 
-                alt="Tela com resumo de assinatura de um aplicativo fictício de música.">
-              </a>
-                <figcaption>Página de app de música com HTML e CSS, desafio do site Frontend Mentor.</figcaption>
-              </figure>
-          </div>
-
-          <div>
-            <a href="https://andradebru.github.io/d5-qr-code/" target="_blank">
-          <figure>
-            <img src="./img/qr-code.jpg" class="item-portfolio" alt="">
-          </a>
-            <figcaption>
-              Página de QR code, desafio do site Frontend Mentor, feito com HTML e CSS.
-            </figcaption>
-          </figure>
-          </div>
-
+        <div class="light-div portfolio" id="portfolio">
+          <div class="portfolio-title">
+          <p class="firula-opcional">////////////////////////////////////////// &nbsp</p>
+            <h2 class="txt-centro">  O que tenho feito </h2>
+            <p class="firula-opcional">&nbsp //////////////////////////////////////////</p>
+            </div>
+            <p class="txt-corrido txt-centro">Projetos além desta página :p</p> 
+          
+            <div class="itens">
             <div>
-              <a href="https://andradebru.github.io/d2.3-pagina-enzo/" target="_blank">
+            <a href="https://github.com/andradebru/EncurtadorURLsDjango" target="_blank">
               <figure>
-                <img src="./img/enzo-pascal.jpg" class="item-portfolio" alt="">
+                <img src="./img/encurteco.png" class="item-portfolio" alt="Tela inicial do encurtador de URLs.">
+              </a>
+              <figcaption>
+                Encurtador de URLs feito em equipe, com Django e PostgreSQL.
+              </figcaption>
+              </figure>
+            </div>
+  
+            <div>
+              <a href="https://andradebru.github.io/d4-wordle/" target="_blank">
+              <figure>
+                <img src="./img/wordle.jpg" class="item-portfolio" alt="">
               </a>
                 <figcaption>
-                  Página fictícia para UX/UI designer para fins de estudo de HTML/CSS.
+                  Clone do jogo Wordle feito com JavaScript, jogável e funcional.
                 </figcaption>
               </figure>
             </div>
-            </a>
-            
+  
             <div>
-              <a href="https://andradebru.github.io/d2.5-layout" target="_blank">
+              <a href="https://andradebru.github.io/d7-buscador-de-passagens/" target="_blank">
               <figure>
-                <img src="./img/pagina-roger.jpg" class="item-portfolio" alt="">
+                <img src="./img/buscador.jpg" class="item-portfolio" 
+                alt="Tela inicial no formato mobile de um app de viagens de ônibus.">
               </a>
                 <figcaption>
-                  Página fictícia para fins de estudo de HTML/CSS. Desafio do Buser Tech.
+                  Reprodução da tela inicial do app mobile da Buser.
                 </figcaption>
               </figure>
             </div>
+  
+            <div>
+              <a href="https://andradebru.github.io/d6-order-summary/" target="_blank">
+                <figure>
+                  <img src="./img/portifloio-01.jpg" class="item-portfolio" 
+                  alt="Tela com resumo de assinatura de um aplicativo fictício de música.">
+                </a>
+                  <figcaption>Página de app de música com HTML e CSS, desafio do site Frontend Mentor.</figcaption>
+                </figure>
+            </div>
+  
+            <div>
+              <a href="https://andradebru.github.io/d5-qr-code/" target="_blank">
+            <figure>
+              <img src="./img/qr-code.jpg" class="item-portfolio" alt="">
+            </a>
+              <figcaption>
+                Página de QR code, desafio do site Frontend Mentor, feito com HTML e CSS.
+              </figcaption>
+            </figure>
+            </div>
+  
+              <div>
+                <a href="https://andradebru.github.io/d2.3-pagina-enzo/" target="_blank">
+                <figure>
+                  <img src="./img/enzo-pascal.jpg" class="item-portfolio" alt="">
+                </a>
+                  <figcaption>
+                    Página fictícia para UX/UI designer para fins de estudo de HTML/CSS.
+                  </figcaption>
+                </figure>
+              </div>
+              </a>
+              
+              <div>
+                <a href="https://andradebru.github.io/d2.5-layout" target="_blank">
+                <figure>
+                  <img src="./img/pagina-roger.jpg" class="item-portfolio" alt="">
+                </a>
+                  <figcaption>
+                    Página fictícia para fins de estudo de HTML/CSS. Desafio do Buser Tech.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-  </div>
-    <footer class="dark-div contato" id="contato">
-      <h2>Vamo tomar um café!</h2>
-      <p class="txt-corrido txt-bco">Bora conversar sobre transição de carreira, programação, 
-        filme de terror com efeitos práticos ou só se acompanhar por aí.</p>
-      <div class="contacts-container">
-        <a href="https://github.com/andradebru" i class="fa-brands fa-github contact-icn" target="_blank"></a i>
-        <a href="https://www.linkedin.com/in/abrunaandrade/" i class="fa-brands fa-linkedin contact-icn" target="_blank"></a i>
-        <a href="mailto:olabrunaandrade@gmail.com" class="fa-solid fa-square-envelope contact-icn" target="_blank"></a i>
-        <a href="https://www.behance.net/andradebruna" class="fa-brands fa-behance-square contact-icn" alt="conheça o que já fiz como designer" target="_blank"></a i>
-      </div>
-      <p class="creditos">Layout e código por Bruna Andrade. <a href="https://github.com/andradebru/dfinal-minha-pagina" class="link-creditos">Dá uma olhada no código</a>.</p>
-    </footer>
+    </div>
+      <footer class="dark-div contato" id="contato">
+        <h2>Vamo tomar um café!</h2>
+        <p class="txt-corrido txt-bco">Bora conversar sobre transição de carreira, programação, 
+          filme de terror com efeitos práticos ou só se acompanhar por aí.</p>
+        <div class="contacts-container">
+          <a href="https://github.com/andradebru" i class="fa-brands fa-github contact-icn" target="_blank"></a i>
+          <a href="https://www.linkedin.com/in/abrunaandrade/" i class="fa-brands fa-linkedin contact-icn" target="_blank"></a i>
+          <a href="mailto:olabrunaandrade@gmail.com" class="fa-solid fa-square-envelope contact-icn" target="_blank"></a i>
+          <a href="https://www.behance.net/andradebruna" class="fa-brands fa-behance-square contact-icn" alt="conheça o que já fiz como designer" target="_blank"></a i>
+        </div>
+        <p class="creditos">Layout e código por Bruna Andrade. <a href="https://github.com/andradebru/dfinal-minha-pagina" class="link-creditos">Dá uma olhada no código</a>.</p>
+      </footer>
+    </div>
   </body>
 </html>
