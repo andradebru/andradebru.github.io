@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,18 +27,15 @@
       src="https://kit.fontawesome.com/9bcdacf017.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1 id="title"></h1>
-      <p id="description"></p>
       <navbar class="no-footer">
-        <button id="langSwitch">Switch Language</button>
-        <a href="#" class="link-menu">início //</a>
-        <a href="#sobre" class="link-menu"> quem é //</a>
+        <button id="languageSwitch">Switch Language</button>
+        <a href="#" class="link-menu" id="linkHome"></a>
+        <a href="#sobre" class="link-menu" id="linkAbout"> </a>
         <a href="#portfolio" class="link-menu"> portfolio //</a>
-        <a href="#contato" class="link-menu"> contato //</a>
+        <a href="#contato" class="link-menu"  id="linkContact"> contato //</a>
       </navbar>
       <div class="no-footer">
         <main>
@@ -67,15 +64,15 @@
             <div class="column">
               <div class="polaroid">
                 <img src="./img/perfil.jpg" alt="" style="width: 100%" />
-                <p class="txt-polaroid">Nas horas vagas:</p>
+                <p class="txt-polaroid" id="socialMedia">Nas horas vagas:</p>
                 <div class="polaroid-icn">
                   <a href="https://letterboxd.com/brunandrade/" i class="fa-solid fa-clapperboard polaroid-icn"></a i>
                   <a href="https://www.skoob.com.br/usuario/185970" i class="fa-solid fa-book-open polaroid-icn"></a i>
                 </div>
               </div>
               <div class="coluna-txt">
-                <h2>Quem é essa Bruna?</h2>
-                <ul class="txt-corrido txt-bco">
+                <h2 id="who">Quem é essa Bruna?</h2>
+                <ul class="txt-corrido txt-bco" id="experience">
                   <li> Estudante de <span class="destaque-bloco-bco">Análise e Desenvolvimento de Sistemas</span>.</li> 
                   <li> Foi estagiária de desenvolvimento web na Buser, pelo programa <span class="destaque-bloco-bco">Buser Tech</span>.</li> 
                   <li>
@@ -103,10 +100,10 @@
         <div class="light-div portfolio" id="portfolio">
           <div class="portfolio-title">
           <p class="firula-opcional">////////////////////////////////////////// &nbsp</p>
-            <h2 class="txt-centro">  O que tenho feito </h2>
+            <h2 class="txt-centro" id="potfolioTitle">  O que tenho feito </h2>
             <p class="firula-opcional">&nbsp //////////////////////////////////////////</p>
             </div>
-            <p class="txt-corrido txt-centro">Projetos além desta página :p</p> 
+            <p class="txt-corrido txt-centro" id="portfolioSubtitle">Projetos além desta página :p</p> 
           
             <div class="itens">
             <div>
@@ -114,7 +111,7 @@
               <figure>
                 <img src="./img/encurteco.png" class="item-portfolio" alt="Tela inicial do encurtador de URLs.">
               </a>
-              <figcaption>
+              <figcaption id="description1">
                 Encurtador de URLs feito em equipe, com Django e PostgreSQL.
               </figcaption>
               </figure>
@@ -125,7 +122,7 @@
               <figure>
                 <img src="./img/wordle.jpg" class="item-portfolio" alt="">
               </a>
-                <figcaption>
+                <figcaption id="description2">
                   Clone do jogo Wordle feito com JavaScript, jogável e funcional.
                 </figcaption>
               </figure>
@@ -137,7 +134,7 @@
                 <img src="./img/buscador.jpg" class="item-portfolio" 
                 alt="Tela inicial no formato mobile de um app de viagens de ônibus.">
               </a>
-                <figcaption>
+                <figcaption id="description3">
                   Reprodução da tela inicial do app mobile da Buser.
                 </figcaption>
               </figure>
@@ -149,7 +146,7 @@
                   <img src="./img/portifloio-01.jpg" class="item-portfolio" 
                   alt="Tela com resumo de assinatura de um aplicativo fictício de música.">
                 </a>
-                  <figcaption>Página de app de música com HTML e CSS, desafio do site Frontend Mentor.</figcaption>
+                  <figcaption id="description4">Página de app de música com HTML e CSS, desafio do site Frontend Mentor.</figcaption>
                 </figure>
             </div>
   
@@ -158,7 +155,7 @@
             <figure>
               <img src="./img/qr-code.jpg" class="item-portfolio" alt="">
             </a>
-              <figcaption>
+              <figcaption id="description5">
                 Página de QR code, desafio do site Frontend Mentor, feito com HTML e CSS.
               </figcaption>
             </figure>
@@ -169,7 +166,7 @@
                 <figure>
                   <img src="./img/enzo-pascal.jpg" class="item-portfolio" alt="">
                 </a>
-                  <figcaption>
+                  <figcaption id="description6">
                     Página fictícia para UX/UI designer para fins de estudo de HTML/CSS.
                   </figcaption>
                 </figure>
@@ -181,7 +178,7 @@
                 <figure>
                   <img src="./img/pagina-roger.jpg" class="item-portfolio" alt="">
                 </a>
-                  <figcaption>
+                  <figcaption id="description-7">
                     Página fictícia para fins de estudo de HTML/CSS. Desafio do Buser Tech.
                   </figcaption>
                 </figure>
@@ -191,8 +188,8 @@
         </div>
     </div>
       <footer class="dark-div contato" id="contato">
-        <h2>Vamo tomar um café!</h2>
-        <p class="txt-corrido txt-bco">Bora conversar sobre transição de carreira, programação, 
+        <h2 id="contactTitle">Vamo tomar um café!</h2>
+        <p class="txt-corrido txt-bco" id="contactSubtitle">Bora conversar sobre transição de carreira, programação, 
           filme de terror com efeitos práticos ou só se acompanhar por aí.</p>
         <div class="contacts-container">
           <a href="https://github.com/andradebru" i class="fa-brands fa-github contact-icn" target="_blank"></a i>
@@ -200,8 +197,9 @@
           <a href="mailto:olabrunaandrade@gmail.com" class="fa-solid fa-square-envelope contact-icn" target="_blank"></a i>
           <a href="https://www.behance.net/andradebruna" class="fa-brands fa-behance-square contact-icn" alt="conheça o que já fiz como designer" target="_blank"></a i>
         </div>
-        <p class="creditos">Layout e código por Bruna Andrade. <a href="https://github.com/andradebru/dfinal-minha-pagina" class="link-creditos">Dá uma olhada no código</a>.</p>
+        <p class="creditos" id="credits">Layout e código por Bruna Andrade. <a href="https://github.com/andradebru/dfinal-minha-pagina" class="link-creditos">Dá uma olhada no código</a>.</p>
       </footer>
     </div>
   </body>
 </html>
+<script src="/script.js"></script>
