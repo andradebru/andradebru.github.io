@@ -20,7 +20,7 @@ const translation = {
         description6: "Página fictícia para UX/UI designer para fins de estudo de HTML/CSS.",
         description7: "Página fictícia para fins de estudo de HTML/CSS. Desafio do Buser Tech.",
         contactTitle: "Vamo tomar um café!",
-        contactSubitle: "Bora conversar sobre transição de carreira, programação, filme de terror com efeitos práticos ou só se acompanhar por aí.",
+        contactSubtitle: "Bora conversar sobre transição de carreira, programação, filme de terror com efeitos práticos ou só se acompanhar por aí.",
     },
     en: {
         linkHome: "home //",
@@ -43,7 +43,7 @@ const translation = {
         description6: "Fictional UX/UI designer page for HTML/CSS study purposes.",
         description7: "Fictional HTML/CSS study page. Buser Tech challenge.",
         contactTitle: "Let's chat!",
-        contactSubitle: "Let's talk about tech oportunities, career transition, practical effects horror movies, or just keep up with each other.",
+        contactSubtitle: "Let's talk about tech oportunities, career transition, practical effects horror movies, or just keep up with each other.",
     }
   };
   
