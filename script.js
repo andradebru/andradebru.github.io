@@ -64,7 +64,7 @@ function updateTexts() {
         "potfolioTitle", "portfolioSubtitle", "description1",
         "description2", "description3", "description4",
         "description5", "description6", "description7",
-        "contactTitle", "contactSubtitle", "credits"
+        "contactTitle", "contactSubtitle"
     ]
     
     textsToTranslate.forEach((elementID) => {
