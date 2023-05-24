@@ -23,7 +23,7 @@ figcaption {
 
 navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 20px;
   background-color: antiquewhite;
   position: sticky;
@@ -31,6 +31,20 @@ navbar {
   border-bottom: 0.2px solid #201f1f;
   padding: 16px 5%;
   z-index: 1;
+}
+
+#languageSwitch {
+  background-color: #201f1f;
+  color: #faf5ef;
+  padding: 2px 15px;
+  text-transform: uppercase;
+  font-weight: 800;
+  outline: 1px;
+}
+
+#languageSwitch:hover {
+  background-color: #36ffb1;
+  color: #201f1f;
 }
 
 div.apresentacao > h3 {
@@ -539,12 +553,3 @@ h3 {
     font-size: 3rem;
   }
 }
-
-/* @media (min-width: 900px) {
-  .contact-icn {
-    font-size: 6rem;
-  }
-  .dark-div-border {
-    padding: 90px;
-  }
-} */
