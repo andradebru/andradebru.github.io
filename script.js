@@ -7,7 +7,7 @@ const translation = {
         who: "Quem é Bruna?",
         experience1: "Estudante de Análise e Desenvolvimento de Sistemas",
         experience2: "Foi estagiária de desenvolvimento web na Buser, pelo programa Buser Tech",
-        experience3: "Tem experiência com front-end com Vue, Vuetify, HTML, CSS e JavaScript</span>, back-end com Python e Django e banco de dados Postgres, SQL.         Atualmente estudando Java.",
+        experience3: "Tem experiência com front-end com Vue, Vuetify, HTML, CSS e JavaScript, back-end com Python e Django e banco de dados Postgres, SQL. Atualmente estudando Java.",
         experience4: "Graduada em Design Gráfico. Na área, trabalhei em várias agências com foco em criação de interfaces para sites e apps.",
         experience5: "Apaixonada por literatura, cinema, filme de terror (principalmente os com efeitos práticos), viagens, arte e tecnologia. Dá pra conferir o que curto nas redes que deixei aqui do lado :)",
         potfolioTitle: "O que tenho feito",
@@ -52,6 +52,7 @@ let currentLanguage = "en";
 function switchLanguage() {
     currentLanguage = currentLanguage === "en" ? "pt" : "en";
     updateTexts();
+    changeButton(currentLanguage);
 }
 
 function updateTexts() {
@@ -69,6 +70,15 @@ function updateTexts() {
     textsToTranslate.forEach((elementID) => {
         document.getElementById(elementID).textContent = content[elementID];
     })
+
+}
+
+function changeButton(currentLanguage) {
+    const langBtnContent = document.getElementById("languageSwitch");
+    
+    currentLanguage === "en"
+    ? langBtnContent.textContent ="pt/br"
+    : langBtnContent.textContent = "english";
 }
 
 document.getElementById("languageSwitch").addEventListener("click", switchLanguage);
