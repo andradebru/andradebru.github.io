@@ -24,11 +24,11 @@ function switchLanguage() {
 
 function updateTexts() {
     const content = translation[currentLanguage];
-    document.getElementById("linkHome").textContent = content.linkHome;
-    document.getElementById("linkAbout").textContent = content.linkAbout;
-    document.getElementById("linkAbout").textContent = content.linkAbout;
-    document.getElementById("linkContact").textContent = content.linkContact;
-    document.getElementById("socialMedia").textContent = content.socialMedia;
+    const textsToTranslate = ["linkHome", "linkAbout", "linkContact", "socialMedia"]
+    
+    textsToTranslate.forEach((elementID) => {
+        document.getElementById(elementID).textContent = content[elementID];
+    })
 }
 
 document.getElementById("languageSwitch").addEventListener("click", switchLanguage);
