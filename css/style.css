@@ -36,10 +36,11 @@ navbar {
 #languageSwitch {
   background-color: #201f1f;
   color: #faf5ef;
-  padding: 2px 15px;
+  padding: 4px 15px;
   text-transform: uppercase;
   font-weight: 800;
-  outline: 1px;
+  border: none;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #languageSwitch:hover {
